@@ -1,5 +1,5 @@
-function Converter(Operand, operator, operator2) {
-    this.Operand = Operand;
+function Converter(operand, operator, operator2) {
+    this.operand = operand;
     this.operator = operator;
     this.operator2 = operator2;
 
@@ -10,28 +10,28 @@ function Converter(Operand, operator, operator2) {
         switch (this.operator) {
 
             case"mm":
-                inMeter = this.Operand / 1000;
+                inMeter = this.operand / 1000;
                 break;
             case"cm":
-                inMeter = this.Operand / 100;
+                inMeter = this.operand / 100;
                 break;
             case"m":
-                inMeter = this.Operand;
+                inMeter = this.operand;
                 break;
             case"km":
-                inMeter = this.Operand * 1000;
+                inMeter = this.operand * 1000;
                 break;
             case"mi":
-                inMeter = this.Operand / 0.000621371192;
+                inMeter = this.operand / 0.000621371192;
                 break;
             case"yd":
-                inMeter = this.Operand / 1.0936133;
+                inMeter = this.operand / 1.0936133;
                 break;
             case"ft":
-                inMeter = this.Operand / 3.2808399;
+                inMeter = this.operand / 3.2808399;
                 break;
             case"in":
-                inMeter = this.Operand / 39.3700787;
+                inMeter = this.operand / 39.3700787;
                 break;
         }
 
