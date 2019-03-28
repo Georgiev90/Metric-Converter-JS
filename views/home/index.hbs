@@ -1,0 +1,72 @@
+<div class="container body-content span=8 offset=2">
+    <div class="well">
+        <form class="form-inline" action="/" method="POST">
+            <fieldset>
+                <div class="form-group">
+                    <div class="col-sm-1 ">
+                        <input type="number"step="any" class="form-control" id="Operand" placeholder="Input unit"
+                               name="converter[Operand]" value="{{converter.Operand}}">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-4 ">
+                        <select class="form-control" name="converter[operator]">
+                            <option value="mm"{{selectif converter.operator2 'mm'}}>mm</option>
+                            <option value="cm"{{selectif converter.operator2 'cm'}}>cm</option>
+                            <option value="m"{{selectif converter.operator2 'm'}}>meter</option>
+                            <option value="km"{{selectif converter.operator2 'km'}}>km</option>
+                            <option value="mi"{{selectif converter.operator2 'mi'}}>miles</option>
+                            <option value="yd"{{selectif converter.operator2 'yd'}}>yard</option>
+                            <option value="ft"{{selectif converter.operator2 'ft'}}>foot</option>
+                            <option value="in"{{selectif converter.operator2 'in'}}>inch</option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-4 ">
+                        <p>Convert To:</p>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-sm-4 ">
+                        <select class="form-control" name="converter[operator2]">
+                            <option value="mm"{{selectif converter.operator2 'mm'}}>mm</option>
+                            <option value="cm"{{selectif converter.operator2 'cm'}}>cm</option>
+                            <option value="m"{{selectif converter.operator2 'm'}}>meter</option>
+                            <option value="km"{{selectif converter.operator2 'km'}}>km</option>
+                            <option value="mi"{{selectif converter.operator2 'mi'}}>miles</option>
+                            <option value="yd"{{selectif converter.operator2 'yd'}}>yard</option>
+                            <option value="ft"{{selectif converter.operator2 'ft'}}>foot</option>
+                            <option value="in"{{selectif converter.operator2 'in'}}>inch</option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-2 ">
+                        <p>=</p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-4 ">
+                        <input type="text" class="form-control" id="result" placeholder="Result"
+                               name="result" value="{{result}}">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-4 col-sm-offset-4">
+                        <button type="submit" class="btn btn-primary">Convert</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
